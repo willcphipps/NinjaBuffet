@@ -9,16 +9,8 @@ namespace HungryNinja.Models
        public override bool IsFull {
             get
             {
-                if (calorieIntake > 1500)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return (calorieIntake > 1500);
             }
-            set { value = IsFull; }
         }
         public override void Consume(IConsumable item)
         {
