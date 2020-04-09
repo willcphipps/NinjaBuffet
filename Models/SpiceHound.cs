@@ -9,16 +9,8 @@ namespace HungryNinja.Models
        public override bool IsFull {
             get
             {
-                if (calorieIntake > 1200)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return (calorieIntake > 1200);
             }
-            set { value = IsFull; }
         }
         public SpiceHound(string name) : base(name)
             {
